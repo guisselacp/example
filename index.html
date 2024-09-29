@@ -18,10 +18,16 @@
         <ul class="navbar-nav mr-auto">
             <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item mr-2"><a class="nav-link" href="/">Best Practices</a></li>
-            <li class="nav-item mr-"><a class="nav-link" href="/">Resources</a></li>
+            <li class="nav-item mr-2"><a class="nav-link" href="/">Resources</a></li>
+            <!-- This will only be displayed on a mobile device -->
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/contact">Contact Us</a></li>
         </ul>
-        <p class="navbar-text my-auto mr-2"><i>Do you need more information?</i></p>
-        <a href="/login">Contact Us</a>
+        <!-- This is only displayed on medium-sized screen resolution -->
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Do you need more information?</i></p>
+            <!--a href="/contact">Contact Us</a>-->
+            <button class="btn btn-success btn-la"> Contact Us</button>
+        </div>
     </nav>
     <article class="container">
         <!-- Callout -->
